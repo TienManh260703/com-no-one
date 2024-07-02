@@ -1,1 +1,28 @@
-spring.application.name=back-end
+server:
+  port: 8080
+spring:
+  application:
+    name: back-end
+  datasource:
+    url: jdbc:mysql://localhost:3306/web_lap_top?useSSL=false&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        show_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+  # config pagination
+  #  start page = 1
+  data:
+    web:
+      pageable:
+        one-indexed-parameters: true
+  # config log
+logging:
+  level:
+    org.springframework.security: DEBUG
