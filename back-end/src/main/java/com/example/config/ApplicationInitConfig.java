@@ -34,7 +34,7 @@ public class ApplicationInitConfig {
 //            Voucher voucher = Voucher
 //                    .builder()
 //                    .loaiGiamGia(1)
-//                    .giaTriGiamGia(BigDecimal.valueOf(500000))
+//                    .giaTriGiamGia(BigDecimal.valueOf(700000))
 //                    .build();
 //            voucherRepository.save(voucher);
 ////          PTTT

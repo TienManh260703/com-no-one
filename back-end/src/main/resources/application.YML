@@ -16,13 +16,11 @@ spring:
         dialect: org.hibernate.dialect.MySQLDialect
     hibernate:
       ddl-auto: update
-  # config pagination
-  #  start page = 1
-  data:
-    web:
-      pageable:
-        one-indexed-parameters: true
   # config log
 logging:
   level:
     org.springframework.security: DEBUG
+
+# api version
+api:
+  prefix: "api/v1"

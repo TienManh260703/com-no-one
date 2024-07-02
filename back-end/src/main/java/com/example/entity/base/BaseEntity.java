@@ -13,7 +13,6 @@ import java.time.LocalDateTime;
 public class BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Setter(AccessLevel.NONE)
     @Column(name = "id", updatable = false, insertable = false)
     Long id;
     @Column(name = "created_at")
